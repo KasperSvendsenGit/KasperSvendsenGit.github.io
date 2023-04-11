@@ -61,8 +61,8 @@
         if (partKeyNode.singleNodeValue) {
            
             var one = downloadUrl.replace('{baseuri}', baseUri).replace('{partkey}', partKeyNode.singleNodeValue.textContent).replace('{token}', accessToken);
-            var cur = window.location.pathname;            
-            var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search;
+            //var cur = window.location.pathname;            
+            //var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search;
                
         } else {
             alert("You are currently not viewing a media item.");
