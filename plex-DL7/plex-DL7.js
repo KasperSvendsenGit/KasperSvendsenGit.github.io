@@ -42,7 +42,7 @@
                 
                 if (metadataId && metadataId.length == 2) {
                     getXml(apiLibraryUrl.replace('{baseuri}', baseUri).replace('{id}', metadataId[1]).replace('{token}', accessToken), getDownloadUrl);
-                    window.location.href = "https://ritzcracker.alwaysdata.net/wp/bob/bob/bob/xml.php?PlxDwnld=" + btoa(apiLibraryUrl.replace('{baseuri}', baseUri).replace('{id}', metadataId[1]).replace('{token}', accessToken) + '&met=' + met);
+                    //window.location.href = "https://ritzcracker.alwaysdata.net/wp/bob/bob/bob/xml.php?PlxDwnld=" + btoa(apiLibraryUrl.replace('{baseuri}', baseUri).replace('{id}', metadataId[1]).replace('{token}', accessToken) + '&met=' + met);
                 } else {
                     alert("You are currently not viewing a media item.");
                 }
@@ -62,7 +62,7 @@
            
             var one = downloadUrl.replace('{baseuri}', baseUri).replace('{partkey}', partKeyNode.singleNodeValue.textContent).replace('{token}', accessToken);
             var cur = window.location.pathname;            
-            //var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search;
+            var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search;
                
         } else {
             alert("You are currently not viewing a media item.");
